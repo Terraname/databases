@@ -28,15 +28,15 @@ Database models and control systems labs for 5th semester
     -	Изменение информации о существующих товарах
     -	Изменение информации о количестве товаров в наличии
 3.	Описание сущностей:
-•	User(Ползователь)
-•	Product
-•	Cart
-•	Products
-•	Review
-•	Order
-•	Address
-•	Cathegory
-•	Image
-•	Storage_location
-•	Shipping_provider
+  •	User(Ползователь)
+  •	Product
+  •	Cart
+  •	Products
+  •	Review
+  •	Order
+  •	Address
+  •	Cathegory
+  •	Image
+  •	Storage_location
+  •	Shipping_provider
 4.	Ограничения:
