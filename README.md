@@ -61,6 +61,7 @@ Database models and control systems labs for 5th semester
     + статус
     + общая стоимость
     + адрес(обязатекльно)
+    + пользователь(обязательно)
   -	Address
     + страна
     + город
