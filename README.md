@@ -66,7 +66,7 @@ Database models and control systems labs for 5th semester
     + город
     + улица
     + дом
-    + кваптира
+    + квартира
   -	Cathegory
     + имя
     + описание
