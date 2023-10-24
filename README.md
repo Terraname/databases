@@ -75,9 +75,9 @@ Database models and control systems labs for 5th semester
     + описание(charfield, обязательное)
   -	Image
     + ссылка(Imagefiedl, обязательно)
-    + описание(charfield,)
-    + формат(charfield)
-    + качество((intfield, infield))
+    + описание(charfield, обязательное)
+    + формат(charfield, обязательное)
+    + качество((intfield, infield), обязательное)
   -	Storage_location
     + имя(charfield, опциональное)
     + адрес(foreign key(address), обязательное)
