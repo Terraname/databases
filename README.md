@@ -46,47 +46,47 @@ Database models and control systems labs for 5th semester
     + изображение(foreign key(image),оционально)
     + грузоперевозчик(foreign key(shipping_provider))
   -	Cart
-    + пользователь(foreign key, обязательное)
-    + продукты(one-to-many-relation, опциональное)
-    + заказ(foreign key, опциональное)
+    + пользователь(foreign key(user), обязательное)
+    + продукты(one-to-many-relation(products), опциональное)
+    + заказ(foreign key(order), опциональное)
   -	Products
-    + товар(foreign key, обязательное)
+    + товар(foreign key(product), обязательное)
     + количество(intfield, обязательное)
-    + корзина(foreign key, обязательное)
+    + корзина(foreign key(cart), обязательное)
   -	Review
-    + текст
-    + оценка
-    + пользователь
-    + товар
+    + текст(charfield, опциональное)
+    + оценка(intfield(max=10), обязательное)
+    + пользователь(foreign key(user),  обязательное)
+    + товар(foreign key(user),обязательное)
   -	Order
-    + дата
-    + статус
-    + общая стоимость
-    + адрес(обязатекльно)
-    + пользователь(обязательно)
+    + дата(datefield, )
+    + статус(intfield(max = 5),)
+    + общая стоимость(floatfield, обязательное)
+    + адрес(foreign key(address), обязатекльно)
+    + пользователь(foreign key(user), обязательно)
   -	Address
-    + страна
-    + город
-    + улица
-    + дом
-    + квартира
+    + страна(charfield(), опциональное)
+    + город(charfield(), обязательное)
+    + улица(charfield(), обязательное)
+    + дом(charfield(),обязательное)
+    + квартира(charfiedl(), опциональное)
   -	Cathegory
-    + имя
-    + описание
+    + имя(charfield, обязательное, уникальное)
+    + описание(charfield, обязательное)
   -	Image
-    + ссылка(обязательно)
-    + описание
-    + формат
-    + качество
+    + ссылка(Imagefiedl, обязательно)
+    + описание(charfield,)
+    + формат(charfield)
+    + качество((intfield, infield))
   -	Storage_location
-    + имя
-    + адрес
-    + товары
-    + поставщики(необязательно)
+    + имя(charfield, опциональное)
+    + адрес(foreign key(address), обязательное)
+    + товары(many-to-many relation (product), опциональное)
+    + поставщики(foreign key(shipping provider),необязательно)
   -	Shipping_provider
-    + имя
-    + сайт
-    + ментод доставки
-    + стоимость
-    + обслуживаемые регионы
+    + имя(charfield, обязательное)
+    + сайт(charfield, обязательное)
+    + ментод доставки(charfield, обязательное)
+    + стоимость(charfield,опциональное)
+    + обслуживаемые регионы(many-to-many-relation(address), опциональное)
 5.	Ограничения:
