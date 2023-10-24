@@ -32,10 +32,10 @@ Database models and control systems labs for 5th semester
      + Регистрация администраторов и выдача прав пользователям(присвоение групп)
 4.	Описание сущностей:
   -	User(Ползователь)
-    + Имя(charfield)
-    + Фамилия(charfield)
+    + Имя(charfield, обязательное)
+    + Фамилия(charfieldб обязательное)
     + Логин(Charfield, Primary key, Уникальный, не нуль)
-    + Пароль(charfieid)
+    + Пароль(charfieidб обязательное)
     + Корзина(foreign key(Cart),Опционально)
   -	Product
     + название(charfield, обязательное, уникальное)
@@ -65,6 +65,7 @@ Database models and control systems labs for 5th semester
     + адрес(foreign key(address), обязатекльно)
     + пользователь(foreign key(user), обязательно)
   -	Address
+    + Address_ID(Primary key)
     + страна(charfield(), опциональное)
     + город(charfield(), обязательное)
     + улица(charfield(), обязательное)
